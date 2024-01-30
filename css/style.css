@@ -62,16 +62,30 @@ legend {
 form input, 
 fieldset select {
     border: 1px solid #B91450;
+    padding: 5px 10px;
+    font-size: 20px;
 }
 
+/* personalizzazione input form */
+
+
+form input::placeholder {
+    text-align: center;
+
+    color: black;
+}
+
+
 form fieldset {
-    /* display: flex;
-    flex-direction: column; */
+
     gap: 20px;
     
     border: none;
 }
 
+form legend {
+    padding-bottom: 20px;
+}
 
 /* BUTTONS*/
 
@@ -114,7 +128,7 @@ h2 {
     text-align: center;
 }
 
-/* SEcond Section: Output */
+/* Second Section: Output */
 
 section:nth-of-type(2) {
  display: flex;

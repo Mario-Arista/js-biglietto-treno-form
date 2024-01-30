@@ -74,7 +74,7 @@ buttonAnnullaElement.addEventListener("click",
 
         inputFullNameElement.value = "";
         inputKmElement.value = "";
-        inputAgeElement.value = `<option id="over_18" selected="selected">Maggiorenne<option>`;
+        inputAgeElement.value = "Maggiorenne";
 
     }
 )
