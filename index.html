@@ -7,8 +7,87 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <main>
+        
+        <!-- First Section with Form and buttons -->
+        <section>
+
+            <form action="">
+                <div>
+                    <label for="fullNameUser">Nome Cognome</label>
+                    <input type="text" id="fullNameUser">
+                </div>
+
+                <div>
+                    <label for="kmNeeded">KM da percorrere</label>
+                    <input type="number" id="kmNeeded">
+                </div>
+
+                <div>
+                    <label for="kmNeeded">KM da percorrere</label>
+                    <input type="number" id="kmNeeded">
+                </div>
+
+                <fieldset>
+                    <legend>Fascia d'età</legend>
+                    <select name="siti" >
+                        <option selected="selected">Maggiorenne </option>
+                        <option>Minorenne </option>
+                        <option>Over 65 </option>
+                    </select>
+                </fieldset>
+                
+
+            </form>
+
+            <div>
+                <button id="genera"> Genera</button>
+                <button id="annulla">Annulla</button>
+
+            </div>
+        </section>
+
+        <!-- Second Section: output -->
+        <section>   
+            <h2>IL TUO BIGLIETTO</h2>
+            <div>
+
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div>
+                    <div>
+                        <h4>Nome Passeggero</h4>
+                        <div id="outputName"></div>
+                    </div>
+                    <div>
+                        <h4>Offerta</h4>
+                        <div></div>
+                    </div>
+
+                    <div>
+                        <h4>Carrozza</h4>
+                        <div id="carrozzaRandom"></div>
+                    </div>
+
+                    <div>
+                        <h4>Codice CP</h4>
+                        <div id="codiceRandom"></div>
+                    </div>
+                    <h4>Costo biglietto</h4>
+                    <div id="outPrice"></div>
+                </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main> 
+
     <script src="./js/script.js"></script>
 </body>
 </html>
