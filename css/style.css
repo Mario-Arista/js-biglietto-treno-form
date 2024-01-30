@@ -1,0 +1,132 @@
+body {
+    font-family: sans-serif;
+    background-color: #B91450;
+}
+
+/*  H1 */
+
+h1 {
+    
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+
+section {
+    width: 1000px;
+    background-color: white;
+
+    margin: 0 auto;
+
+}
+
+/*  First Section */
+
+section:first-of-type {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.205);
+}
+
+/*  INPUT */
+
+form {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form div label, 
+legend {
+    text-align: center;
+    color: #B91450;
+    font-weight: 600;
+}
+
+form input, 
+fieldset select {
+    border: 1px solid #B91450;
+}
+
+form fieldset {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 20px;
+    
+    border: none;
+}
+
+
+/* BUTTONS*/
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding-top: 65px;
+    padding-bottom: 20px;
+
+
+}
+
+button {
+    background-color: #CCCCCC;
+    border: 2px orange solid;
+    padding: 5px 5px;
+    border-radius: 7px;
+}
+
+#annulla {
+    border: 2px darkgrey solid;
+}
+
+#buttons a {
+    text-decoration: none;
+    
+    font-size: 16px;
+    font-weight: bold;
+    color: #B91450; 
+}
+/* h2 */
+
+h2 {
+    margin-bottom: 0px;
+
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* SEcond Section: Output */
+
+section:nth-of-type(2) {
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+h3 {
+    padding-top: 25px;
+    padding-left: 25px;
+
+}
+
+section:nth-of-type(2) > div {
+    display: flex;
+
+
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+
