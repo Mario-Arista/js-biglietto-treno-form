@@ -37,9 +37,6 @@ Scrivere un programma che chieda all’utente:
 buttonGeneraElement.addEventListener("click",
     function() {
 
-        // let pricePerKm = (inputKmElement.value * 0.21);
-        // console.log("prezzo calcolato", pricePerKm);
-
         // al click sul bottone genera, si generano gli output:
         document.getElementById("output-name").innerHTML = inputFullNameElement.value;
 
@@ -55,14 +52,15 @@ buttonGeneraElement.addEventListener("click",
     }
 )
 
-// buttonGeneraElement.addEventListener("click",
-//     function() {
+buttonAnnullaElement.addEventListener("click",
+    function() {
 
-//         // al click sul bottone annulla, si resettano gli imput
+        // al click sul bottone annulla, si resettano gli imput
 
-//         document.querySelector("#output-name").innerHTML = inputFullNameElement.value;
-//         document.querySelector("#output-name").innerHTML = inputKmElement.value;
+        inputFullNameElement.value = "";
+        inputKmElement.value = "";
+        inputAgeElement.value = `<option id="over_18" selected="selected">Maggiorenne<option>`;
 
-//     }
-// )
+    }
+)
 
