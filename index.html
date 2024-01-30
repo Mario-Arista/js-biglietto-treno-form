@@ -21,21 +21,21 @@
             <form action="">
                 <div>
                     <label for="full_name_user">Nome Cognome</label>
-                    <input type="text" id="fullNameUser">
+                    <input type="text" id="full_name_user">
                 </div>
 
                 <div>
                     <label for="km_needed">KM da percorrere</label>
-                    <input type="number" id="kmNeeded">
+                    <input type="number" id="km_needed">
                 </div>
 
 
                 <fieldset>
                     <legend>Fascia d'età</legend>
                     <select id="choice-age-field" name="siti" >
-                        <option selected="selected">Maggiorenne </option>
-                        <option>Minorenne </option>
-                        <option>Over 65 </option>
+                        <option id="over_18" selected="selected">Maggiorenne<option>
+                        <option id="under_18">Minorenne </option>
+                        <option id="over_65">Over 65</option>
                     </select>
                 </fieldset>
                 
@@ -58,24 +58,24 @@
                 <div>
                     <div>
                         <h4>Nome Passeggero</h4>
-                        <div id="outputName"></div>
+                        <div id="output-name"></div>
                     </div>
                     <div>
                         <h4>Offerta</h4>
-                        <div></div>
+                        <div id="type_ticket"></div>
                     </div>
 
                     <div>
                         <h4>Carrozza</h4>
-                        <div id="carrozzaRandom"></div>
+                        <div id="carrozza-random"></div>
                     </div>
 
                     <div>
                         <h4>Codice CP</h4>
-                        <div id="codiceRandom"></div>
+                        <div id="codice-random"></div>
                     </div>
                     <h4>Costo biglietto</h4>
-                    <div id="outPrice"></div>
+                    <div id="out-price"></div>
                 </div>
                 </div>
 

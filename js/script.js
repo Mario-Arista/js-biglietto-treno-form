@@ -1,12 +1,23 @@
 // INPUT
 const inputFullNameElement = document.querySelector("#full_name_user");
-const inputKMElement = document.querySelector("#km_needed");
+const inputKmElement = document.querySelector("#km_needed");
 const inputAgeElement = document.querySelector("#choice-age-field");
 
 
 // BUTTON
 const buttonGeneraElement = document.querySelector("#genera");
 const buttonAnnullaElement = document.querySelector("#annulla");
+
+// PRICE PER KM 
+
+let pricePerKm;
+
+// RANDOM NUMBERS
+const sceltaComputerCarrozza = Math.floor(Math.random() * 15) + 1;
+console.log(sceltaComputerCarrozza);
+
+const sceltaComputerCPM = Math.floor(Math.random() * 9999) + 90000;
+console.log(sceltaComputerCPM);
 
 
 /* 
@@ -20,3 +31,38 @@ Scrivere un programma che chieda all’utente:
  - va applicato uno sconto del 20% per i minorenni
  - va applicato uno sconto del 40% per gli over 65.
 */
+
+
+
+buttonGeneraElement.addEventListener("click",
+    function() {
+
+        // let pricePerKm = (inputKmElement.value * 0.21);
+        // console.log("prezzo calcolato", pricePerKm);
+
+        // al click sul bottone genera, si generano gli output:
+        document.getElementById("output-name").innerHTML = inputFullNameElement.value;
+
+
+        document.getElementById("carrozza-random").innerHTML = sceltaComputerCarrozza;
+        document.getElementById("codice-random").innerHTML = sceltaComputerCPM;
+
+
+
+        document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21);
+
+
+    }
+)
+
+// buttonGeneraElement.addEventListener("click",
+//     function() {
+
+//         // al click sul bottone annulla, si resettano gli imput
+
+//         document.querySelector("#output-name").innerHTML = inputFullNameElement.value;
+//         document.querySelector("#output-name").innerHTML = inputKmElement.value;
+
+//     }
+// )
+
