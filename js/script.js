@@ -52,10 +52,10 @@ buttonGeneraElement.addEventListener("click",
 
         // PREZZO PER KM + AGE CHOICE 
 
-        if (inputAgeElement == "Minorenne") {
+        if (inputAgeElement.value == "Minorenne") {
             document.getElementById("type_ticket").innerHTML = "Biglietto scontato del 20%";
             document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21 * 0.80);
-        } else if (inputAgeElement == "Over 65") {
+        } else if (inputAgeElement.value == "Over 65") {
             document.getElementById("type_ticket").innerHTML = "Biglietto scontato del 40%";
             document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21 * 0.60);
 
