@@ -20,6 +20,8 @@ const sceltaComputerCPM = Math.floor(Math.random() * 9999) + 90000;
 console.log(sceltaComputerCPM);
 
 
+
+
 /* 
 Scrivere un programma che chieda all’utente:
  - Il numero di chilometri da percorrere
@@ -38,16 +40,29 @@ buttonGeneraElement.addEventListener("click",
     function() {
 
         // al click sul bottone genera, si generano gli output:
+
+        // NOME
         document.getElementById("output-name").innerHTML = inputFullNameElement.value;
 
-
+        // NUMERO RANDOM CARROZZA
         document.getElementById("carrozza-random").innerHTML = sceltaComputerCarrozza;
+
+        // NUMERO RANDOM CODICE
         document.getElementById("codice-random").innerHTML = sceltaComputerCPM;
 
+        // PREZZO PER KM + AGE CHOICE 
 
+        if (inputAgeElement == "Minorenne") {
+            document.getElementById("type_ticket").innerHTML = "Biglietto scontato del 20%";
+            document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21 * 0.80);
+        } else if (inputAgeElement == "Over 65") {
+            document.getElementById("type_ticket").innerHTML = "Biglietto scontato del 40%";
+            document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21 * 0.60);
 
-        document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21);
-
+        } else {
+            document.getElementById("type_ticket").innerHTML = "Biglietto standard";
+            document.getElementById("out-price").innerHTML = (inputKmElement.value * 0.21);
+        }
 
     }
 )
