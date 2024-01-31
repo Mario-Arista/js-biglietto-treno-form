@@ -12,7 +12,7 @@ const buttonAnnullaElement = document.querySelector("#annulla");
 const outputNameElement = document.querySelector("#output-name");
 const outputTicketElement = document.querySelector("#type_ticket");
 const outputCarrozzaElement = document.querySelector("#carrozza-random");
-const outputCodiceElement = document.querySelector("#carrozza-random");
+const outputCodiceElement = document.querySelector("#codice-random");
 const outputPriceElement = document.querySelector("#out-price");
 
 // PRICE PER KM 
@@ -46,19 +46,19 @@ buttonGeneraElement.addEventListener("click",
         if (inputAgeElement.value === "Minorenne") {
 
             outputTicketElement.innerHTML = "Biglietto scontato del 20%";
-            outputPriceElement.innerHTML = pricePerKm * 0.80 + "€";
+            outputPriceElement.innerHTML = (pricePerKm * 0.80).toFixed(2) + "€";
 
 
         } else if (inputAgeElement.value === "Over 65") {
 
             outputTicketElement.innerHTML = "Biglietto scontato del 40%";
-            outputPriceElement.innerHTML = pricePerKm * 0.60 + "€";
+            outputPriceElement.innerHTML = (pricePerKm * 0.60).toFixed(2) + "€";
 
 
         } else {
 
             outputTicketElement.innerHTML = "Biglietto standard";
-            outputPriceElement.innerHTML = pricePerKm;
+            outputPriceElement.innerHTML = pricePerKm.toFixed(2);
 
         }
 

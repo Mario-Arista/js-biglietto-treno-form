@@ -18,39 +18,41 @@
         <!-- First Section with Form and buttons -->
         <section>
 
-            <form>
-                <div>
-                    <label for="full_name_user">Nome Cognome</label>
-                    <input type="text" id="full_name_user" placeholder="Nome Cognome">
-                </div>
+            <div id="form">
 
                 <div>
-                    <label for="km_needed">KM da percorrere</label>
-                    <input type="number" id="km_needed" placeholder="10">
+                    <div class="row">
+                        <label for="full_name_user">Nome Cognome</label>
+                        <input type="text" id="full_name_user" placeholder="Nome Cognome">
+                    </div>
+
+                    <div class="row">
+                        <label for="km_needed">KM da percorrere</label>
+                        <input type="number" id="km_needed" placeholder="10">
+                    </div>
+
+
+                    <fieldset class="row">
+                        <legend>Fascia d'età</legend>
+                        <select id="choice-age-field" name="siti" >
+                            <option id="over_18" selected="selected">Maggiorenne<option>
+                            <option id="under_18">Minorenne</option>
+                            <option id="over_65">Over 65</option>
+                        </select>
+                    </fieldset>
                 </div>
-
-
-                <fieldset>
-                    <legend>Fascia d'età</legend>
-                    <select id="choice-age-field" name="siti" >
-                        <option id="over_18" selected="selected">Maggiorenne<option>
-                        <option id="under_18">Minorenne</option>
-                        <option id="over_65">Over 65</option>
-                    </select>
-                </fieldset>
-                
-
-            </form>
-
-            <div id="buttons">
-                <button id="genera">
-                    <a href="">Genera</a>
-                </button>
-                <button id="annulla">
-                    <a href="">Annulla</a>
-                </button>
+                <div id="buttons">
+                    <div>
+                        <input id="genera" type="button" value="Genera" >
+                    </div>
+                    <div>
+                        <input id="annulla" type="button" value="Annulla" >
+                    </div>
+                </div>
 
             </div>
+
+
 
         </section>
 

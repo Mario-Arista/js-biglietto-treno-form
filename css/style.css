@@ -37,27 +37,35 @@ section:first-of-type {
 
 /*  INPUT */
 
-form {
+#form {
     padding-top: 40px;
     display: flex;
-    justify-content: center;
-    gap: 75px;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
 }
 
-form div {
+#form div:first-child {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
-form div label, 
+#form div:first-child .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#form label, 
 legend {
     text-align: center;
     color: #B91450;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-form input, 
+#form input, 
 fieldset select {
     border: 1px solid #B91450;
     padding: 5px 10px;
@@ -67,21 +75,21 @@ fieldset select {
 /* personalizzazione input form */
 
 
-form input::placeholder {
+#form input::placeholder {
     text-align: center;
 
     color: black;
 }
 
 
-form fieldset {
+#form fieldset {
 
     gap: 20px;
     
     border: none;
 }
 
-form legend {
+#form legend {
     padding-bottom: 20px;
 }
 
@@ -98,24 +106,19 @@ form legend {
 
 }
 
-button {
+#buttons input {
     background-color: #CCCCCC;
     border: 2px orange solid;
     padding: 5px 5px;
     border-radius: 7px;
-}
 
-#annulla {
-    border: 2px darkgrey solid;
-}
-
-#buttons a {
     text-decoration: none;
     
     font-size: 16px;
     font-weight: bold;
     color: #B91450; 
 }
+
 /* h2 */
 
 h2 {
